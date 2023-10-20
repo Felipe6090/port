@@ -4,8 +4,10 @@ import { DefaultButton } from "../Atoms/DefaultButton";
 
 export default function Header() {
   return (
-    <header className="flex min-w-full items-center justify-between px-6 py-2">
-      <span className="font-bold text-xl">{`<Vieira />`}</span>
+    <header className="flex min-w-full items-center justify-between px-6 py-4">
+      <Link href="/">
+        <span className="font-semibold text-xl">{`< vieira />`}</span>
+      </Link>
 
       <nav className="flex min-w-[70%] justify-end gap-10">
         <Link href="/">Home</Link>
@@ -13,7 +15,7 @@ export default function Header() {
         <Link href="/projects">Projetos</Link>
       </nav>
 
-      <DefaultButton text="Iniciar Chat" />
+      <DefaultButton color="white" text="Iniciar Chat" />
     </header>
   );
 }

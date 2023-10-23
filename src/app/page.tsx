@@ -66,7 +66,7 @@ export default function Home() {
 
         <span>Alguns dos meus trabalhos:</span>
 
-        <div className="grid grid-cols-2 w-[100%] gap-10 justify-between">
+        <div className="grid grid-cols-2 gap-20">
           <Card />
           <Card />
           <Card />

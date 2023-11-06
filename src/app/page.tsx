@@ -6,7 +6,7 @@ export default function Home() {
     <main className="flex max-h-[90vh] justify-between h-screen">
       <section className="flex flex-col justify-between min-w-1/2 px-6">
         <div className="flex flex-col gap-2">
-          <p className="text-5xl">Oii! meu nome é</p>
+          <p className="text-4xl">Oii! meu nome é</p>
           <h3 className="text-5xl font-semibold">Felipe Borges Vieira</h3>
         </div>
 
@@ -20,12 +20,17 @@ export default function Home() {
         </div>
 
         <div className="flex gap-4">
-          <DefaultButton text="Contato" color="orange" />
-          <DefaultButton text="projetos" color="white" />
+          <DefaultButton
+            text="Contato"
+            color="orange"
+            href="https://wa.me//5527996514712?text=Tenho%20interesse%20em%20comprar%20seu%20carro"
+          />
+
+          <DefaultButton text="projetos" href="/projects" />
         </div>
 
-        <div className="flex flex-col gap-2">
-          <span className="text-3xl font-semibold">Skills:</span>
+        <div className="flex flex-col gap-1">
+          <span className="text-2xl font-semibold">Skills:</span>
 
           <div className="grid grid-cols-3 gap-2 text-lg pl-3">
             <h1>React</h1>
@@ -40,15 +45,15 @@ export default function Home() {
         <div>
           <span>Contato:</span>
 
-          <div>
+          <div className="flex gap-8">
             <span>felipevieira962@gmail.com</span>
             <span>+ 55 ( 27 ) 99651-4712</span>
           </div>
         </div>
 
-        <footer className="bg-greyblack -mx-6 flex h-48">
+        <footer className="bg-greyblack -mx-6 flex h-44">
           <div className="flex flex-col justify-around text-white p-3 underline underline-offset-8">
-            <span className="font-semibold text-2xl">Sobre Mim:</span>
+            <span className="font-semibold text-xl">Sobre Mim:</span>
 
             <span>Estudo principalmente pela Alura e RocktSeat</span>
             <span>Estou no 5° semestre de engenharia de software</span>
@@ -66,11 +71,11 @@ export default function Home() {
 
         <span>Alguns dos meus trabalhos:</span>
 
-        <div className="grid grid-cols-2 gap-20">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className="grid grid-cols-2 gap-10">
+          <Card href="/projects" title="Titulo" description="Descrição" />
+          <Card href="/projects" title="Titulo" description="Descrição" />
+          <Card href="/projects" title="Titulo" description="Descrição" />
+          <Card href="/projects" title="Titulo" description="Descrição" />
         </div>
 
         <p>

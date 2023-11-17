@@ -23,8 +23,8 @@ export default function Home() {
           <DefaultButton
             text="Contato"
             color="orange"
-            href="https://wa.me//5527996514712?text=Tenho%20interesse%20em%20comprar%20seu%20carro"
-          />
+            href="https://wa.me//5527996514712?text=Olá%20gostaria%20de%20pedir%20um%20orçamento"
+            />
 
           <DefaultButton text="projetos" href="/projects" />
         </div>

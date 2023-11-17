@@ -15,7 +15,11 @@ export default function Header() {
         <Link href="/projects">Projetos</Link>
       </nav>
 
-      <DefaultButton color="white" text="Iniciar Chat" href="/projects" />
+      <DefaultButton
+        color="white"
+        text="Iniciar Chat"
+        href="https://wa.me//5527996514712?text=Olá%20gostaria%20de%20pedir%20um%20orçamento"
+      />
     </header>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Card from "./components/Atoms/Card";
 import { DefaultButton } from "./components/Atoms/DefaultButton";
 
@@ -24,7 +25,7 @@ export default function Home() {
             text="Contato"
             color="orange"
             href="https://wa.me//5527996514712?text=Olá%20gostaria%20de%20pedir%20um%20orçamento"
-            />
+          />
 
           <DefaultButton text="projetos" href="/projects" />
         </div>
@@ -83,9 +84,9 @@ export default function Home() {
           deploy
         </p>
 
-        <div>
-          Olhar o desenvolvimento deste portifólio <div></div>
-        </div>
+        <Link href="https://github.com/Felipe6090/port" legacyBehavior>
+          <a target="blank"> Olhar o desenvolvimento deste portifólio</a>
+        </Link>
       </aside>
     </main>
   );

@@ -8,6 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        "2xlmax": { max: "1536px" },
+
+        xlmax: { max: "1280px" },
+
+        lgmax: { max: "1024px" },
+
+        mdmax: { max: "768px" },
+
+        smmax: { max: "640px" },
+      },
       colors: {
         greyblack: "#262626",
         orange: "#FE481C",
